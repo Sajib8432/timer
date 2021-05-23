@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    align-items: center;
+}
+
+.logo{
+    color: palegreen;
+    font-size: 35px;
+    margin-left: 50px;
+    line-height: 80px;
+}
+#menu{
+    margin-right: 50px;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+#menu li{
+
+}
+
+#menu li a{
+    color: paleturquoise;
+    text-transform: uppercase;
+    line-height: 80px;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#menu li a:hover{
+    background-color: paleturquoise;
+    color: #333;
+    margin: 25px 50px 25px 0;
+}
+.burger{
+    margin-right: 50px;
+    display: none;
+}
+.burger > div{
+    width: 30px;
+    height: 3px;
+    background-color: paleturquoise;
+    margin: 5px;
+}
+
+@media (max-width: 680px){ 
+    body{
+        overflow: hidden;
+    }  
+    nav{
+        position: relative;
+    }
+    #menu{
+        display: none;
+    }
+    #menu li{
+
+    }
+    #menu li a{
+
+    }
+    .burger{
+        display: initial;
+    }
+}
+.card{
+    width: 60%;
+    margin: 10px auto;
+    background: #666;
+    height: 400px;
+    border-radius: 5px;
+}
+.card h2{
+    line-height: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: palegreen;
+}
+.card h3{
+    font-size: 25px;
+    color: palegreen;
+    margin-left: 10%;
+    margin-top: 10%;
+    float: left;
+}
+#clock{
+    margin-top: 6%;
+    margin-right: 5%;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    float: right;
+    border-radius: 5px;
+    color: #111;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
